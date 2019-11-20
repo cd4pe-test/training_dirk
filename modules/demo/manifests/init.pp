@@ -18,4 +18,7 @@ class demo {
     host_aliases => "ec2-52-29-44-164.eu-central-1.compute.amazonaws.com.",
   }
 
+  $mastername = ::demo.mastername
+  notify {"Result: $mastername": }
+
 }
