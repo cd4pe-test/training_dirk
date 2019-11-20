@@ -14,8 +14,8 @@ class demo {
 
   # add /etc/hosts entry for own host
   host { $::hostname:
-    ip         => $::ipaddress,
-    host_alias => "ec2-52-29-44-164.eu-central-1.compute.amazonaws.com."
+    ip          => $::ipaddress,
+    host_aliases => "ec2-52-29-44-164.eu-central-1.compute.amazonaws.com.",
   }
 
 }
