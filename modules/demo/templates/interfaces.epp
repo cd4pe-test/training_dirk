@@ -1,0 +1,7 @@
+# This file is maintained by Puppet
+# Do not edit
+The following are IP addresses on this host:
+<%#demo/templates/interfaces.epp -%>
+<%$facts['networking']['interfaces'].each |$ifcase, $value| { -%>
+Interface <%=$ifcase %> has an IP of <%= $value['ip'] %>
+<% } -%>
