@@ -6,6 +6,7 @@
 #   include demo
 class demo {
 
+  $file_content = undef,
 
   file { '/var/tmp/interfaces.txt':
     ensure => file,
@@ -20,5 +21,10 @@ class demo {
 
   $mastername = ::demo.mastername
   notify {"Result: $mastername": }
+
+  file { '/var/tmp/hira.txt':
+    ensure => file,
+    content => $file_content,
+  }
 
 }
