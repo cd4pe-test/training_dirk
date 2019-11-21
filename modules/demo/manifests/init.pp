@@ -4,9 +4,11 @@
 #
 # @example
 #   include demo
-class demo {
+class demo (
 
   $file_content = undef,
+
+){
 
   file { '/var/tmp/interfaces.txt':
     ensure => file,
