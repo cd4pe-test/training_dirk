@@ -6,7 +6,7 @@
 #   include demo
 class demo (
 
-  $file_content = undef,
+[String] $file_content = undef,
 
 ){
 
