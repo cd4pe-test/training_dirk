@@ -1,2 +1,2 @@
 ---
-demo::file_content: "Data from <node>.yaml"
+demo::file_content: "Data from <node>.yaml\n"
