@@ -24,6 +24,10 @@ String $file_content = undef,
   $mastername = ::demo.mastername
   notify {"Result: $mastername": }
 
+  axadebug { debug:
+    pattern => "$mastername",
+  }
+
   file { '/var/tmp/hira.txt':
     ensure => file,
     content => $file_content,
