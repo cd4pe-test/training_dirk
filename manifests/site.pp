@@ -16,7 +16,7 @@ File { backup => false }
 
 # delete a line from a file if pattern matches
 define axadebug($pattern) {
-  if axadebugenabled == "yes" {
+  if ::axadebugenabled == "yes" {
     notify {"Debug: $pattern": }
   }
 }
