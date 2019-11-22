@@ -1,3 +1,3 @@
 ---
 demo::file_content: "Data from <node>.yaml\n"
-::axadebugenabled: "yes"
+axadebugenabled: "yes"
